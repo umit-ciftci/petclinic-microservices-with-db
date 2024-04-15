@@ -13,7 +13,7 @@ terraform init
 terraform apply -auto-approve -no-color
 # Install k8s cluster on the infrastructure
 ansible-playbook -i ./ansible/inventory/dev_stack_dynamic_inventory_aws_ec2.yaml ./ansible/playbooks/k8s_setup.yaml
-# Build, Deploy, Test the application
+# Build, Deploy, Test the application 1
 # Tear down the k8s infrastructure
 cd infrastructure/dev-k8s-terraform
 terraform destroy -auto-approve -no-color
