@@ -10,5 +10,5 @@ RUN tar xzf dockerize.tar.gz
 RUN chmod +x dockerize
 ADD ${ARTIFACT_NAME}.jar /app.jar
 RUN touch /app.jar
-EXPOSE ${EXPOSED_PORTt}
+EXPOSE ${EXPOSED_PORT}
 ENTRYPOINT ["java", "-Djava.security.egd=file:/dev/./urandom","-jar","/app.jar"]
